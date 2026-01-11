@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Family Tree Builder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1>Family Tree Builder</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Add / Edit Member</h2>
+
+            <input type="hidden" id="memberId" />
+
+            <label>Name *</label>
+            <input type="text" id="name" />
+
+            <label>Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob" />
+
+            <label>Father</label>
+            <select id="father"></select>
+
+            <label>Mother</label>
+            <select id="mother"></select>
+
+            <label>Spouse</label>
+            <select id="spouse"></select>
+
+            <button onclick="saveMember()">Save Member</button>
+            <button onclick="resetForm()" class="secondary">Clear</button>
+        </div>
+
+        <div class="card">
+            <h2>Member Details</h2>
+            <div id="details">Select a member from the tree</div>
+        </div>
+
+    </div>
+
+    <div class="card full">
+        <h2>Family Tree</h2>
+        <div id="tree"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.full {
+    width: 700px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 8px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.secondary {
+    background: #777;
+}
+
+button.delete {
+    background: #e53935;
+}
+
+.tree-node {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.tree-node:hover {
+    text-decoration: underline;
+}
+
+.child {
+    margin-left: 25px;
+}
